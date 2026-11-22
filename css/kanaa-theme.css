@@ -1,0 +1,108 @@
+/* Kanaa Construction theme: graphite, silver and gold from the logo */
+:root{--font-family-base:Barlow,Roboto,sans-serif;--font-family-title:'Chakra Petch',Oswald,sans-serif;--gold:#e3b341}
+body,h1,h2,h3,h4,h5,h6,.title,.btn{font-family:var(--font-family-title)}
+p,li{font-family:var(--font-family-base)}
+.btn-primary,.btn.btn-primary,.btn-primary:hover{color:#15181c!important}
+.top-bar{background:#0f1215!important;color:#d9dde2!important;border-bottom:1px solid #313840}
+.top-bar a,.top-bar li,.top-bar i{color:#d9dde2!important}.top-bar i{color:var(--gold)!important}
+.site-header .main-bar,.site-header .is-fixed .main-bar,.site-header.style-4 .main-bar{background:#15181c!important}
+.header-nav .nav>li>a{color:#d9dde2!important}
+.header-nav .nav>li>a:hover,.header-nav .nav>li.active>a{color:var(--gold)!important}
+.logo-header img{height:100px;width:auto;max-width:none}
+.logo-header.logo-white{display:block!important}.logo-header.logo-dark{display:none}
+.navicon span{background:#d9dde2}
+.kanaa-dark{background:#1e2329!important}.kanaa-dark .title,.kanaa-dark p,.kanaa-dark h3{color:#d9dde2}
+.kanaa-dark .content-box2{background:#15181c}
+.kanaa-enq{position:relative}.kanaa-enq:before{content:"";position:absolute;inset:0;background:rgba(21,24,28,.88)}.kanaa-enq .container{position:relative}
+.kanaa-enq .title{color:#fff}
+.kanaa-call{background:linear-gradient(135deg,#15181c,#2a2f36);border-top:3px solid var(--gold)}
+.site-footer,.site-footer.style-4 .footer-top,.footer-bottom{background:#0f1215!important}
+.footer-footer-bottom{border-color:#313840}
+#Whatsapp{position:fixed;right:18px;bottom:78px;z-index:30;width:54px;height:54px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;font-size:1.8rem;box-shadow:0 6px 18px rgba(0,0,0,.5)}
+#Whatsapp img{width:30px}
+.content-box2 .dz-media img{width:100%;height:220px;object-fit:cover}.content-box2 .dz-info p{text-align:left}
+.footer-logo img{height:80px;width:auto}.btn-link{color:#15181c}
+.swiper-slide{height:auto}.content-box2{height:100%;display:flex;flex-direction:column}.content-box2 .dz-info p{min-height:5.2em}
+.kanaa-counter{background:linear-gradient(rgba(21,24,28,.88),rgba(21,24,28,.88)),url(../images/crane.jpg) center/cover fixed}
+.kanaa-counter .icon-bx{background:var(--gold)}
+.dz-box.style-4{position:relative;overflow:hidden}
+.dz-box.style-4 .dz-media img{width:100%;height:100%;object-fit:cover}
+.kanaa-cap{position:absolute;left:0;right:0;bottom:0;margin:0;padding:2.2rem 1rem .8rem;color:#fff;font-size:1.05rem;background:linear-gradient(transparent,rgba(21,24,28,.9));pointer-events:none;z-index:2}
+.kanaa-cinfo{height:100%}
+.kanaa-cinfo .icon-content{min-width:0}
+.kanaa-cinfo .icon-content a{overflow-wrap:anywhere;word-break:break-word;font-size:.98rem}
+.kanaa-map{display:block;min-height:420px;background:#1e2329}
+.devhub{
+  font-family:'Tangerine',cursive;
+  font-size:24px;
+  font-weight:700;
+  color:#fff!important;
+  text-decoration:none;
+  transition:all .3s ease;
+}
+.devhub:hover{
+  font-size:28px;
+  color:#fff!important;
+  text-decoration:none;
+}
+
+/* ===== Footer: line above copyright ===== */
+.site-footer .footer-bottom,.site-footer.style-4 .footer-bottom{border-top:1px solid #313840}
+
+/* ===== Responsive: tablets and mobiles (additive only) ===== */
+html,body{overflow-x:hidden}
+img,iframe,video{max-width:100%}
+.footer-bottom p{margin:0;line-height:1.7;overflow-wrap:anywhere}
+.top-bar a{overflow-wrap:anywhere;word-break:break-word}
+@media only screen and (max-width:991px){
+  .logo-header img{height:52px}
+  .kanaa-counter{background-attachment:scroll}
+  .kanaa-map{min-height:320px}
+}
+@media only screen and (max-width:767px){
+  .top-bar{font-size:.85rem}
+  .top-bar ul{gap:.15rem .9rem;padding:0;margin:0}
+  .dz-topbar-left,.dz-topbar-left ul{max-width:100%}
+  .logo-header img{height:46px}
+  .footer-logo img{height:64px}
+  .footer-bottom{padding:14px 0!important;text-align:center}
+  .footer-bottom p{font-size:.9rem}
+  .footer-bottom .devhub{font-size:22px}
+  .footer-bottom .devhub:hover{font-size:24px}
+  .kanaa-map{min-height:280px}
+  .content-box2 .dz-media img{height:200px}
+  .content-box2 .dz-info p{min-height:0}
+  #Whatsapp{width:48px;height:48px;right:14px;bottom:70px}
+  iframe{max-width:100%}
+}
+@media only screen and (max-width:400px){
+  .top-bar{font-size:.78rem}
+  .top-bar li{display:block;text-align:center}
+  .logo-header img{height:40px}
+  .kanaa-cap{font-size:.95rem}
+}
+
+/* ===== Footer contact strip: long email fits on small screens ===== */
+.icon-bx-wraper.style-9{display:flex;align-items:center}
+.icon-bx-wraper.style-9 .icon-content{min-width:0;flex:1 1 auto}
+.icon-bx-wraper.style-9 .icon-content a{overflow-wrap:anywhere;word-break:break-word}
+@media only screen and (max-width:767px){
+  .site-footer .footer-bottom{padding-bottom:80px!important}
+}
+
+/* ===== Mobile menu: dark panel, readable links, bigger logo ===== */
+@media only screen and (max-width:991px){
+  .site-header .header-nav,.mo-left .header-nav{background-color:#15181c!important}
+  .header-nav .nav>li{border-bottom:1px solid #313840!important}
+  .header-nav .nav>li>a{color:#d9dde2!important;font-size:1.05rem}
+  .header-nav .nav>li.active>a,.header-nav .nav>li>a:hover{color:var(--gold)!important}
+  .mo-left .header-nav .logo-header{display:block!important}
+  .mo-left .header-nav .logo-header img{width:auto!important;height:78px!important;max-width:100%}
+  .logo-header img{height:64px}
+}
+@media only screen and (max-width:767px){
+  .logo-header img{height:90px}
+}
+@media only screen and (max-width:400px){
+  .logo-header img{height:52px}
+}
