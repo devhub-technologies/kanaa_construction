@@ -1,0 +1,1 @@
+(function(){var f=document.getElementById("enq");if(!f)return;f.addEventListener("submit",function(e){e.preventDefault();var d=new FormData(f);var t="Hello Kanaa Construction,\nName: "+d.get("name")+"\nPhone: "+d.get("phone")+"\nPlace: "+d.get("place")+"\nMessage: "+d.get("message");window.open("https://wa.me/917708553447?text="+encodeURIComponent(t),"_blank")})})();
